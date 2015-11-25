@@ -1,0 +1,22 @@
+{
+  "name": "react-kit",
+  "version": "1.0.0",
+  "description": "React Kit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nsisodiya/react-kit.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Narendra Sisodiya <narendra@narendrasisodiya.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nsisodiya/react-kit/issues"
+  },
+  "homepage": "https://github.com/nsisodiya/react-kit#readme"
+}
