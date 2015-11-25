@@ -20,6 +20,7 @@ React Kit for React workshop ! Status = Working (Not Ready)
 - [ ] Store Viewer
 - [ ] Animation
 - [ ] External CSS - Font Awesome
+- [ ] Elemental UI - http://elemental-ui.com/css
 
 Basic Components
 
@@ -29,9 +30,11 @@ Basic Components
 - [ ] Popup
 - [ ] DataTables and Graphs
 
-Other Features
+Other Features (If Possible)
 
 - [ ] Theming
 - [ ] Internationalisation
 - [ ] Performance Stats - time executions on various components loading/unloading etc
 - [ ] Inline Edit Forms etc
+- [ ] Isomorphic
+- [ ] Show build Error Directly on Red Block
