@@ -26,3 +26,8 @@ Basic Components
 - [ ] Navigator
 - [ ] Tabs
 - [ ] Routing
+
+Other Features
+
+- [ ] Theming
+- [ ] Internationalisation
