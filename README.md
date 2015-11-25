@@ -26,8 +26,12 @@ Basic Components
 - [ ] Navigator
 - [ ] Tabs
 - [ ] Routing
+- [ ] Popup
+- [ ] DataTables and Graphs
 
 Other Features
 
 - [ ] Theming
 - [ ] Internationalisation
+- [ ] Performance Stats - time executions on various components loading/unloading etc
+- [ ] Inline Edit Forms etc
