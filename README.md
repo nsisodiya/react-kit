@@ -5,22 +5,24 @@ React Kit for React workshop ! Status = Working (Not Ready)
 
 # Task
 
-- [ ] Bable 6 and React 14, Webpack latest
-- [ ] Hot Reload
-- [ ] Image loader
-- [ ] External CSS Loader
+- [x] Bable 6 and React 14, Webpack latest
+- [ ] Hot Reload or LiveReload
 - [ ] Module Generator + per module loading
-- [ ] Linting etc
-- [ ] react-css-modules
+- [ ] Linting and preprocessing etc
+- [x] react-css-modules
 - [ ] autoprefixing
 - [ ] Test cases adding
 - [ ] build failed if test fails.
 - [ ] Travis builds
+- [x] Component Creator
 - [ ] Store Creator
 - [ ] Store Viewer
 - [ ] Animation
+- [ ] Image loader
+- [ ] External CSS Loader
 - [ ] External CSS - Font Awesome
 - [ ] Elemental UI - http://elemental-ui.com/css
+- [ ] Minification of JS/CSS
 
 Basic Components
 
