@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CDIR=$PWD/../src/business-layer/stores
+CDIR=$PWD/../src/stores
 StoreName=$1
 
 if [ -z $StoreName ]
@@ -18,7 +18,7 @@ fi
 echo "Welcome to React! Now generating $StoreName Store for you"
 
 cat > $newFile << EndOfMessage
-import GenerateSingletonStore from './GenerateSingletonStore.js';
+import GenerateSingletonStore from './../common/GenerateSingletonStore.js';
 
 module.exports = GenerateSingletonStore({
 	INIT: function (state) {

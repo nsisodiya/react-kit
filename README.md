@@ -25,8 +25,8 @@ open http://localhost:8000/?m=HelloWorld
 - [ ] build failed if test fails.
 - [ ] Travis builds
 - [x] Component Creator, per component Loading -
-- [ ] Store Creator
-- [ ] Store Viewer
+- [x] Store Creator
+- [x] Store Viewer
 - [ ] Animation
 - [ ] Image loader
 - [ ] svg-icons to font generator !
@@ -43,6 +43,10 @@ Basic Components
 - [ ] Routing
 - [ ] Popup
 - [ ] DataTables and Graphs
+
+Basic Store
+- [x] CounterStore
+- [x] Simple Flux Implementation
 
 Other Features (If Possible)
 

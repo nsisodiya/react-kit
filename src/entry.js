@@ -14,14 +14,25 @@ window.reactBridge = {
 //	util: require('./../bl/common/util'),
 	components: {},
 	stores: {},
-	constants: {}//,
-//	dispatcher: require('./../bl/dispatcher/dispatcher')
+	constants: {},
+	dispatcher: require('./common/dispatcher').default
 };
 
+//Register Components
 [
-	"HelloWorld"
+	"HelloWorld",
+	"Counter",
+	"StoreLoader"
 ].map(function (v, i) {
 	window.reactBridge.components[v] = require('./components/' + v + '/' + v).default;
+});
+
+
+//Register Stores
+[
+	"CounterStore"
+].map(function (v) {
+	window.reactBridge.stores[v] = require('./stores/' + v).default;
 });
 
 //Register React !
