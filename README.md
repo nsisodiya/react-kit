@@ -16,14 +16,13 @@ webpack --watch
 
 - [x] Bable 6 and React 14, Webpack latest
 - [ ] Hot Reload or LiveReload
-- [ ] Module Generator + per module loading
 - [ ] Linting and preprocessing etc
 - [x] react-css-modules
 - [ ] autoprefixing
 - [ ] Test cases adding
 - [ ] build failed if test fails.
 - [ ] Travis builds
-- [x] Component Creator
+- [x] Component Creator, per component Loading -
 - [ ] Store Creator
 - [ ] Store Viewer
 - [ ] Animation
