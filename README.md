@@ -3,6 +3,15 @@ React Kit for React workshop ! Status = Working (Not Ready)
 
 ![Under Construction](http://s29.postimg.org/71vwj0gef/under_Construction.gif)
 
+# Install and work
+
+```
+git clone git@github.com:nsisodiya/react-kit.git
+cd react-kit
+npm install
+webpack --watch
+```
+
 # Task
 
 - [x] Bable 6 and React 14, Webpack latest
