@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CDIR=$PWD/../src/js/bl/store
+CDIR=$PWD/../src/business-layer/stores
 StoreName=$1
 
 if [ -z $StoreName ]

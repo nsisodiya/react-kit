@@ -1,11 +1,18 @@
+var path = require('path');
+var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+
 module.exports = {
-	entry: {
-		entry: "./src/entry.js"
-	},
+	devtool: 'eval',
+	entry: [
+		'webpack-dev-server/client?http://localhost:8000',
+		'webpack/hot/only-dev-server',
+		'./src/entry.js'
+	],
 	output: {
-		path: "dist",
-		filename: "[name].bundle.js"
+		path: path.join(__dirname, 'dist'),
+		filename: "bundle.js",
+		publicPath: '/static/'
 		//libraryTarget: 'umd',
 		//library: "[name]"
 	},
@@ -24,6 +31,7 @@ module.exports = {
 //		}
 //	},
 	plugins: [
+		new webpack.HotModuleReplacementPlugin(),
 		new ExtractTextPlugin('app.css', {
 			allChunks: true
 		})
@@ -33,10 +41,7 @@ module.exports = {
 			{
 				test: /.jsx?$/,
 				exclude: /node_modules/,
-				loader: "babel",
-				query: {
-					presets: ['react', 'es2015', 'stage-0']
-				}
+				loaders: ['react-hot', "babel"]
 			},
 			{
 				test: /\.css$/,

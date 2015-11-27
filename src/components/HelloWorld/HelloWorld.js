@@ -7,13 +7,13 @@ class HelloWorld extends Component {
 		super(props, context);
 		this.state = {
 			name: 'HelloWorld'
-		}
+		};
 	}
 
 	render() {
 		return (
 				<div styleName='container'>
-					This is {this.state.name} Component
+					This is {this.state.name} Component ! Hot Module Reload is Working !
 				</div>
 		);
 	}

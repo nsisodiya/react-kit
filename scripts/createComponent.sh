@@ -32,7 +32,7 @@ class $ComponentName extends Component {
 		super(props, context);
 		this.state = {
 			name: '$ComponentName'
-		}
+		};
 	}
 
 	render() {

@@ -9,15 +9,16 @@ React Kit for React workshop ! Status = Working (Not Ready)
 git clone git@github.com:nsisodiya/react-kit.git
 cd react-kit
 npm install
-webpack --watch
+npm start
 ```
 
 # Task
 
 - [x] Bable 6 and React 14, Webpack latest
-- [ ] Hot Reload or LiveReload
+- [x] Hot Reload of JS
 - [ ] Linting and preprocessing etc
 - [x] react-css-modules
+- [ ] Hot Reload of CSS module
 - [ ] autoprefixing
 - [ ] Test cases adding
 - [ ] build failed if test fails.
