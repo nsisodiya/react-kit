@@ -29,6 +29,7 @@ open http://localhost:8000/?m=HelloWorld
 - [ ] Store Viewer
 - [ ] Animation
 - [ ] Image loader
+- [ ] svg-icons to font generator !
 - [ ] External CSS Loader
 - [ ] External CSS - Font Awesome
 - [ ] Elemental UI - http://elemental-ui.com/css
