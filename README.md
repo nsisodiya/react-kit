@@ -34,10 +34,12 @@ open http://localhost:8000/?m=HelloWorld
 - [ ] External CSS - Font Awesome
 - [ ] Elemental UI - http://elemental-ui.com/css
 - [ ] Minification of JS/CSS
+- [ ] grunt deploy to create distribution folder
+- [ ] Live-Reload from dist folder !
 
 Basic Components
 
-- [x] Hello World
+- [x] Counter Example
 - [ ] Navigator
 - [ ] Tabs
 - [ ] Routing

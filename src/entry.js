@@ -20,7 +20,6 @@ window.reactBridge = {
 
 //Register Components
 [
-	"HelloWorld",
 	"Counter",
 	"StoreLoader"
 ].map(function (v, i) {
