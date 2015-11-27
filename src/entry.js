@@ -21,7 +21,7 @@ window.reactBridge = {
 [
 	"HelloWorld"
 ].map(function (v, i) {
-	window.reactBridge.components[v] = require('./components/' + v + '/' + v);
+	window.reactBridge.components[v] = require('./components/' + v + '/' + v).default;
 });
 
 //Register React !

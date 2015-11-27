@@ -4,11 +4,35 @@
 	<meta charset="UTF-8">
 	<title>React Kit Demo</title>
 	<link rel="stylesheet" href="app.css">
+	<script src="entry.bundle.js"></script>
 </head>
 <body>
-<script src="entry.bundle.js"></script>
 <h1>React Kit Demo</h1>
-
 <div id="root"></div>
+<script>
+
+	var moduleName = window.location.search.split("?m=")[1];
+	var apiName = window.location.search.split("?api=")[1];
+	var storeName = window.location.search.split("?store=")[1];
+	var node = document.getElementById('root');
+
+	if (moduleName !== undefined) {
+		var moduleReactComponent = window.reactBridge.components[moduleName];
+//		if (typeof moduleReactComponent !== "function") {
+//			alert("Error,Module not found ," + moduleName);
+//		}
+		ReactDOM.render(React.createElement(moduleReactComponent, null), node);
+
+	} else if (storeName !== undefined) {
+		ReactDOM.render(React.createElement(window.reactBridge.components.StoreLoader, {
+			storeName: storeName
+		}), node);
+	} else {
+		alert("Unable to know what to do - Possible syntax \n" +
+				"http://localhost:8000/?store=CounterStore\n" +
+				"http://localhost:8000/?m=Counter\n"
+		)
+	}
+</script>
 </body>
 </html>
