@@ -36,6 +36,7 @@ open http://localhost:8000/?m=HelloWorld
 
 Basic Components
 
+- [x] Hello World
 - [ ] Navigator
 - [ ] Tabs
 - [ ] Routing
