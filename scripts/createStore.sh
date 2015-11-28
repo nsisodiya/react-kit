@@ -20,7 +20,7 @@ echo "Welcome to React! Now generating $StoreName Store for you"
 cat > $newFile << EndOfMessage
 import GenerateSingletonStore from './../common/GenerateSingletonStore.js';
 
-module.exports = GenerateSingletonStore({
+export default GenerateSingletonStore({
 	INIT: function (state) {
 
 	}
