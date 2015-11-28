@@ -10,7 +10,7 @@ git clone git@github.com:nsisodiya/react-kit.git
 cd react-kit
 npm install
 npm start
-open http://localhost:8000/?m=HelloWorld
+open http://localhost:8000/?m=Counter
 ```
 
 # Task
