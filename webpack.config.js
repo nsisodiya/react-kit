@@ -5,14 +5,11 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
 	devtool: 'eval',
 	entry: [
-		'webpack-dev-server/client?http://localhost:8000',
-		'webpack/hot/only-dev-server',
 		'./src/entry.js'
 	],
 	output: {
 		path: path.join(__dirname, 'dist'),
-		filename: "bundle.js",
-		publicPath: '/static/'
+		filename: "bundle.js"
 		//libraryTarget: 'umd',
 		//library: "[name]"
 	},
@@ -31,7 +28,6 @@ module.exports = {
 //		}
 //	},
 	plugins: [
-		new webpack.HotModuleReplacementPlugin(),
 		new ExtractTextPlugin('app.css', {
 			allChunks: true
 		})

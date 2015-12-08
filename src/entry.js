@@ -21,6 +21,7 @@ window.reactBridge = {
 //Register Components
 [
 	"Counter",
+	"About",
 	"StoreLoader"
 ].map(function (v, i) {
 	window.reactBridge.components[v] = require('./components/' + v + '/' + v).default;

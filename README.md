@@ -6,11 +6,13 @@ React Kit for React workshop ! Status = Working (Not Ready)
 # Install and work
 
 ```
+npm install webpack -g
+npm install grunt-cli -g
 git clone git@github.com:nsisodiya/react-kit.git
 cd react-kit
 npm install
-npm start
-open http://localhost:8000/?m=Counter
+grunt start-dev-server
+http://localhost:8000/?m=Counter
 ```
 
 # Task

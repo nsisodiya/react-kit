@@ -3,12 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>React Kit Demo</title>
-	<link rel="stylesheet" href="/static/app.css">
+	<link rel="stylesheet" href="/app.css">
 </head>
 <body>
 <h1>React Kit Demo</h1>
 <div id="root"></div>
-<script src="/static/bundle.js"></script>
+<script src="/bundle.js"></script>
 <script>
 
 	var moduleName = window.location.search.split("?m=")[1];
@@ -36,3 +36,7 @@
 </script>
 </body>
 </html>
+<script>
+	document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+			':35731/livereload.js?snipver=1"></' + 'script>')
+</script>
