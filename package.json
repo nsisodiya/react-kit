@@ -21,10 +21,12 @@
   },
   "homepage": "https://github.com/nsisodiya/react-kit#readme",
   "dependencies": {
+    "box-sizing.css": "1.0.1",
     "eventbus_js": "1.0.1",
     "history": "1.15.0",
     "keymirror": "0.1.1",
     "lodash": "3.10.1",
+    "normalize.css": "3.0.3",
     "react": "0.14.3",
     "react-dom": "0.14.3",
     "react-json-viewer": "1.0.7"
