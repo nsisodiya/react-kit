@@ -32,19 +32,20 @@ http://localhost:8000/?m=Counter
 - [ ] Animation
 - [ ] Image loader
 - [ ] svg-icons to font generator !
-- [ ] External CSS Loader
+- [x] normalize.css and box-sizing.css
+- [ ] External CSS Loader (Done partially)
 - [ ] External CSS - Font Awesome
 - [ ] Elemental UI - http://elemental-ui.com/css
 - [ ] Minification of JS/CSS
 - [ ] grunt deploy to create distribution folder
-- [ ] Live-Reload from dist folder !
+- [x] Live-Reload from dist folder !
 
 Basic Components
 
 - [x] Counter Example
-- [ ] Navigator
+- [ ] Navigator (WIP)
 - [ ] Tabs
-- [ ] Routing
+- [ ] Routing (WIP)
 - [ ] Popup
 - [ ] DataTables and Graphs
 
