@@ -2,18 +2,19 @@ import React, {Component} from 'react';
 import styles from './ContentArea.css';
 import CSSModules from 'react-css-modules';
 
+import Counter from '../Counter/Counter';
+import About from '../About/About';
+
 class ContentArea extends Component {
 	constructor(props, context) {
 		super(props, context);
-		this.state = {
-			name: 'ContentArea'
-		};
 	}
 
 	render() {
 		return (
 				<div styleName='container'>
-					This is {this.state.name} Component
+					<Counter/>
+					<About/>
 				</div>
 		);
 	}
