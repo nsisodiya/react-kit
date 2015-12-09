@@ -13,6 +13,7 @@ class ContentArea extends Component {
 		super(props, context);
 		this.config = {
 			routes: {
+				"/": Counter,
 				"/about": About,
 				"/counter": Counter,
 				"/users/:userId": UserList,
