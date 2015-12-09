@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="/app.css">
 </head>
 <body>
-<div id="root"></div>
+<div style="height: 100%;margin: 0" id="root"></div>
 <script src="/bundle.js"></script>
 <script>
 
@@ -27,10 +27,12 @@
 			storeName: storeName
 		}), node);
 	} else {
-		alert("Unable to know what to do - Possible syntax \n" +
-				"http://localhost:8000/?store=CounterStore\n" +
-				"http://localhost:8000/?m=Counter\n"
-		)
+
+		ReactDOM.render(React.createElement(window.reactBridge.components.MainApp, null), node);
+//		alert("Unable to know what to do - Possible syntax \n" +
+//				"http://localhost:8000/?store=CounterStore\n" +
+//				"http://localhost:8000/?m=Counter\n"
+//		)
 	}
 </script>
 </body>

@@ -4,3 +4,4 @@
 
 import 'normalize.css/normalize.css';
 import 'box-sizing.css/box-sizing.css';
+import './style.css';
