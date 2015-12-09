@@ -1,10 +1,9 @@
 # react-kit
-React Kit for React workshop ! Status = Working (Not Ready)
+React Kit for React workshop !
 
 ![Under Construction](http://s29.postimg.org/71vwj0gef/under_Construction.gif)
 
 # Install and work
-
 ```
 npm install webpack -g
 npm install grunt-cli -g
@@ -21,26 +20,26 @@ http://localhost:8000
 
 - [x] Bable 6 and React 14, Webpack latest
 - [x] Hot Reload of JS
-- [ ] Linting and preprocessing etc
+- [x] Live-Reload from dist folder !
 - [x] react-css-modules
+- [x] Component Creator, per component Loading -
+- [x] Store Creator
+- [x] Store Viewer
+- [x] normalize.css and box-sizing.css
 - [ ] Hot Reload of CSS module
 - [ ] autoprefixing
 - [ ] Test cases adding
 - [ ] build failed if test fails.
 - [ ] Travis builds
-- [x] Component Creator, per component Loading -
-- [x] Store Creator
-- [x] Store Viewer
+- [ ] Linting and preprocessing etc
 - [ ] Animation
 - [ ] Image loader
 - [ ] svg-icons to font generator !
-- [x] normalize.css and box-sizing.css
 - [ ] External CSS Loader (Done partially)
 - [ ] External CSS - Font Awesome
 - [ ] Elemental UI - http://elemental-ui.com/css
 - [ ] Minification of JS/CSS
 - [ ] grunt deploy to create distribution folder
-- [x] Live-Reload from dist folder !
 - [ ] Extract Routing Code outside this repo
 
 Basic Components
@@ -49,6 +48,7 @@ Basic Components
 - [x] Left Navigator
 - [x] Routing - Component Replacement
 - [ ] Tabs
+- [ ] Routing - Confirm Navigation
 - [ ] Routing - Tabbing - Show/Hide
 - [ ] Popup
 - [ ] DataTables and Graphs
