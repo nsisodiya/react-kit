@@ -9,6 +9,7 @@ import routeEventBus from '../../common/routeEventBus';
 class RouteLoader extends Component {
 	constructor(props, context) {
 		super(props, context);
+		console.log("RouterLoader -> Init");
 		this.state = {
 			currentRoute: null
 		};
@@ -53,7 +54,7 @@ class RouteLoader extends Component {
 	}
 
 	render() {
-		console.log("Router Render Running");
+		console.log("RouterLoader -> Render");
 		if (this.state.currentRoute === null) {
 			return (<div></div>);
 		}

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import styles from './UserList.css';
 import CSSModules from 'react-css-modules';
 import Link from '../Link/Link';
+import util from '../../common/util';
 
 let myusers = [
 	{
@@ -47,7 +48,7 @@ class UserList extends Component {
 		this.state = {
 			userId: this.props.userId
 		};
-		console.log("UserList Component Rendered !!");
+		console.log("UserList Component Init");
 	}
 
 	componentWillReceiveProps (nextProps){
@@ -57,6 +58,7 @@ class UserList extends Component {
 	}
 
 	render() {
+		console.log("UserList Component -> Render");
 		return (
 				<div styleName='container'>
 					<ul>{
@@ -64,9 +66,12 @@ class UserList extends Component {
 							return <li key={user.twitter}><Link href={"/users/" + user.twitter}>{user.name}</Link></li>
 						})
 					}</ul>
-					<div className="userInfoBox">
-						<UserInfo userId={this.state.userId}/>
-					</div>
+					{
+							util.iff(this.state.userId !== undefined, <div className="userInfoBox">
+								<UserInfo userId={this.state.userId}/>
+							</div>)
+					}
+
 				</div>);
 	}
 }
