@@ -2,6 +2,10 @@ import React, {Component} from 'react';
 import styles from './MainApp.css';
 import CSSModules from 'react-css-modules';
 
+import Header from '../Header/Header';
+import LeftNav from '../LeftNav/LeftNav';
+import ContentArea from '../ContentArea/ContentArea';
+
 class MainApp extends Component {
 	constructor(props, context) {
 		super(props, context);
@@ -13,7 +17,11 @@ class MainApp extends Component {
 	render() {
 		return (
 				<div styleName='container'>
-					This is {this.state.name} Component
+					<Header/>
+					<div styleName='mainArea'>
+						<LeftNav />
+						<ContentArea/>
+					</div>
 				</div>
 		);
 	}

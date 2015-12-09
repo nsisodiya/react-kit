@@ -9,9 +9,9 @@ class Header extends Component {
 
 	render() {
 		return (
-				<h1 styleName='container'>
+				<div styleName='container'>
 					Welcome to React Kit
-				</h1>
+				</div>
 		);
 	}
 }

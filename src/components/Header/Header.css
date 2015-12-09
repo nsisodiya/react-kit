@@ -1,5 +1,8 @@
 .container {
 	position: relative;
+	font-size: xx-large;
 	border: 1px solid darkgrey;
-	padding: 5px;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
 }

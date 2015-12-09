@@ -1,3 +1,18 @@
 .container {
-	position: relative;
+	display: flex;
+	flex-direction: column;
+	height:100%;
+	margin:0;
+}
+
+.mainArea {
+	display: flex;
+	flex:2;
+}
+
+.mainArea > :nth-child(1) {
+	flex: 1;
+}
+.mainArea > :nth-child(2) {
+	flex: 9;
 }

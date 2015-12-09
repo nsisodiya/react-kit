@@ -8,7 +8,10 @@ import StoreActionsViewer from '../StoreActionsViewer/StoreActionsViewer';
 class StoreLoader extends Component {
 	constructor(props, context) {
 		super(props, context);
-
+		if(this.props.storeName === undefined){
+			alert("storeName Prop not passed");
+			return;
+		}
 		this.store = window.reactBridge.stores[this.props.storeName];
 		window.currentStore = this.store;
 		this.actionList = this.store.getAllEvents();
@@ -39,7 +42,6 @@ class StoreLoader extends Component {
 	}
 }
 StoreLoader.defaultProps = {
-	storeName: "something"
 };
 StoreLoader.propTypes = {};
 export default CSSModules(StoreLoader, styles);
