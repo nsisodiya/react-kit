@@ -13,6 +13,8 @@ cd react-kit
 npm install
 grunt start-dev-server
 http://localhost:8000/?m=Counter
+or
+http://localhost:8000
 ```
 
 # Task
@@ -39,13 +41,15 @@ http://localhost:8000/?m=Counter
 - [ ] Minification of JS/CSS
 - [ ] grunt deploy to create distribution folder
 - [x] Live-Reload from dist folder !
+- [ ] Extract Routing Code outside this repo
 
 Basic Components
 
 - [x] Counter Example
-- [ ] Navigator (WIP)
+- [x] Left Navigator
+- [x] Routing - Component Replacement
 - [ ] Tabs
-- [ ] Routing (WIP)
+- [ ] Routing - Tabbing - Show/Hide
 - [ ] Popup
 - [ ] DataTables and Graphs
 
