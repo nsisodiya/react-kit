@@ -11,6 +11,7 @@ class Counter extends Component {
 		this.state = CounterStore.getState();
 		console.log("Initial State", this.state);
 	}
+
 	componentDidMount() {
 		this.unsub = CounterStore.onChange(()=> {
 			this.setState(CounterStore.getState());

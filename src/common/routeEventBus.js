@@ -16,7 +16,9 @@ var addEvent = (function () {
 	} else {
 		return function (el, type, fn) {
 			if (el && el.nodeName || el === window) {
-				el.attachEvent('on' + type, function () { return fn.call(el, window.event); });
+				el.attachEvent('on' + type, function () {
+					return fn.call(el, window.event);
+				});
 			} else if (el && el.length) {
 				for (var i = 0; i < el.length; i++) {
 					addEvent(el[i], type, fn);
@@ -33,5 +35,10 @@ addEvent(window, 'popstate', function (event) {
 	});
 });
 
+setTimeout(function () {
+	routeEventBus.publish("ROUTE_CHANGE_REQUESTED", {
+		path: window.location.pathname
+	});
+}, 0);
 
 export default routeEventBus;

@@ -16,6 +16,7 @@ class Link extends Component {
 			path: synthEvt.target.getAttribute("href")
 		});
 	}
+
 	render() {
 		return (
 				<a onClick={this.linkClicked.bind(this)} {...this.props}>{this.props.children}</a>

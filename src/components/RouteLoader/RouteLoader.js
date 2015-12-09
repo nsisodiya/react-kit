@@ -6,7 +6,6 @@ import PathParser from 'pathparser';
 var simplePathParser = new PathParser();
 import routeEventBus from '../../common/routeEventBus';
 
-
 class RouteLoader extends Component {
 	constructor(props, context) {
 		super(props, context);
@@ -32,7 +31,7 @@ class RouteLoader extends Component {
 				var url = "/" + this.url;
 
 				// Change State if new Component is requested
-				if(self.state.currentRoute !== i){
+				if (self.state.currentRoute !== i) {
 					self.setState({
 						currentRoute: i,
 						url: url,
@@ -41,7 +40,7 @@ class RouteLoader extends Component {
 				}
 
 				//Now Set Path
-				if(window.location.pathname !== url){
+				if (window.location.pathname !== url) {
 					history.pushState({}, "WTF", url);
 				}
 			});
@@ -56,7 +55,7 @@ class RouteLoader extends Component {
 	render() {
 		console.log("Router Render Running");
 		if (this.state.currentRoute === null) {
-			return (<div>No Route Active</div>);
+			return (<div></div>);
 		}
 		var C = this.props.config.routes[this.state.currentRoute];
 		return (
