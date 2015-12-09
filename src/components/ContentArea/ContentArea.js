@@ -2,19 +2,28 @@ import React, {Component} from 'react';
 import styles from './ContentArea.css';
 import CSSModules from 'react-css-modules';
 
+import RouteLoader from '../RouteLoader/RouteLoader';
 import Counter from '../Counter/Counter';
 import About from '../About/About';
+import UserList from '../UserList/UserList';
 
 class ContentArea extends Component {
 	constructor(props, context) {
 		super(props, context);
+		this.config = {
+			routes: {
+				"/about": About,
+				"/counter": Counter,
+				"/users/:userId": UserList
+			}
+
+		};
 	}
 
 	render() {
 		return (
 				<div styleName='container'>
-					<Counter/>
-					<About/>
+					<RouteLoader config={this.config}></RouteLoader>
 				</div>
 		);
 	}

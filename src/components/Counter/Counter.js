@@ -9,6 +9,7 @@ class Counter extends Component {
 	constructor(props, context) {
 		super(props, context);
 		this.state = CounterStore.getState();
+		console.log("Initial State", this.state);
 	}
 	componentDidMount() {
 		this.unsub = CounterStore.onChange(()=> {

@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+import routeEventBus from '../../common/routeEventBus';
+
 class Link extends Component {
 	constructor(props, context) {
 		super(props, context);
@@ -10,7 +12,9 @@ class Link extends Component {
 		synthEvt.preventDefault();
 		synthEvt.stopPropagation();
 		//Send RouteChange Signal to everywhere
-
+		routeEventBus.publish("ROUTE_CHANGE_REQUESTED", {
+			path: synthEvt.target.getAttribute("href")
+		});
 	}
 	render() {
 		return (
