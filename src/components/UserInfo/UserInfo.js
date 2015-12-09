@@ -6,12 +6,18 @@ class UserInfo extends Component {
 	constructor(props, context) {
 		super(props, context);
 		this.state = {
-			name: 'UserInfo'
+			userId: this.props.userId
 		};
 	}
 
+	componentWillReceiveProps (nextProps){
+		this.setState({
+			userId: nextProps.userId
+		});
+	}
+
 	render() {
-		return (<div>User Info will be shown here</div>);
+		return (<div>User {this.state.userId} Selected </div>);
 	}
 }
 UserInfo.defaultProps = {};

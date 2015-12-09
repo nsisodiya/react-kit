@@ -31,13 +31,13 @@ class RouteLoader extends Component {
 				var url = "/" + this.url;
 
 				// Change State if new Component is requested
-				if (self.state.currentRoute !== i) {
+				//if (self.state.currentRoute !== i) {
 					self.setState({
 						currentRoute: i,
 						url: url,
 						args: this
 					});
-				}
+				//}
 
 				//Now Set Path
 				if (window.location.pathname !== url) {
@@ -60,7 +60,7 @@ class RouteLoader extends Component {
 		var C = this.props.config.routes[this.state.currentRoute];
 		return (
 				<div styleName='container'>
-					<C/>
+					<C {...this.state.args} />
 				</div>
 		);
 	}

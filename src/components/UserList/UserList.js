@@ -45,12 +45,18 @@ class UserList extends Component {
 	constructor(props, context) {
 		super(props, context);
 		this.state = {
-			name: 'UserList'
+			userId: this.props.userId
 		};
+		console.log("UserList Component Rendered !!");
+	}
+
+	componentWillReceiveProps (nextProps){
+		this.setState({
+			userId: nextProps.userId
+		});
 	}
 
 	render() {
-		console.log("userList Render");
 		return (
 				<div styleName='container'>
 					<ul>{
@@ -59,7 +65,7 @@ class UserList extends Component {
 						})
 					}</ul>
 					<div className="userInfoBox">
-						<UserInfo/>
+						<UserInfo userId={this.state.userId}/>
 					</div>
 				</div>);
 	}

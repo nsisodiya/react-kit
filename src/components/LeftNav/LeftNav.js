@@ -9,10 +9,12 @@ class LeftNav extends Component {
 		super(props, context);
 	}
 
+
 	render() {
 		return (
 				<div styleName='container'>
-					<Link href="/counter">Counter</Link>
+					<Link href="/counter">CounterComponent</Link>
+					<Link href="/store/CounterStore">Counter Store</Link>
 					<Link href="/users">Users</Link>
 					<Link href="/module">Module Loader</Link>
 					<Link href="/about">About</Link>

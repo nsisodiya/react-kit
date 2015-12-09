@@ -6,6 +6,7 @@ import RouteLoader from '../RouteLoader/RouteLoader';
 import Counter from '../Counter/Counter';
 import About from '../About/About';
 import UserList from '../UserList/UserList';
+import StoreLoader from '../StoreLoader/StoreLoader';
 
 class ContentArea extends Component {
 	constructor(props, context) {
@@ -14,9 +15,9 @@ class ContentArea extends Component {
 			routes: {
 				"/about": About,
 				"/counter": Counter,
-				"/users/:userId": UserList
+				"/users/:userId": UserList,
+				"/store/:storeName": StoreLoader
 			}
-
 		};
 	}
 
