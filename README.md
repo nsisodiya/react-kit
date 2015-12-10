@@ -11,9 +11,9 @@ git clone git@github.com:nsisodiya/react-kit.git
 cd react-kit
 npm install
 grunt start-dev-server
-http://localhost:8000/?m=Counter
+[http://localhost:8000/component/Counter](http://localhost:8000/component/Counter)
 or
-http://localhost:8000
+[http://localhost:8000](http://localhost:8000)
 ```
 
 # Task
@@ -25,6 +25,7 @@ http://localhost:8000
 - [x] Component Creator, per component Loading -
 - [x] Store Creator
 - [x] Store Viewer
+- [x] Component Viewer
 - [x] normalize.css and box-sizing.css
 - [ ] Hot Reload of CSS module
 - [ ] autoprefixing

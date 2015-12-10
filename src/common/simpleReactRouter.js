@@ -130,6 +130,7 @@ class RouteLoader extends Component {
 	componentWillUnmount() {
 		routeEventBus.unsubscribe(this.subId);
 		routeEventBus.unsubscribe(this.subId1);
+		console.log("%c RouteLoader Component -> UnMount ", 'background: black; color: yellow');
 	}
 
 	render() {

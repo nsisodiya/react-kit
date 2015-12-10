@@ -24,12 +24,17 @@ class StoreLoader extends Component {
 			jsonData: this.store.getState()
 		};
 
-		this.store.onChange(() => {
+		this.unsub = this.store.onChange(() => {
 			this.setState({
 				jsonData: this.store.getState()
 			});
 		});
 		console.log("%c StoreLoader Component -> Init ", 'background: red; color: white');
+	}
+
+	componentWillUnmount() {
+		this.unsub();
+		console.log("%c StoreLoader Component -> UnMount ", 'background: black; color: yellow');
 	}
 
 	render() {

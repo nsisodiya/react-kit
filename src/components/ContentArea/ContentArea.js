@@ -8,6 +8,7 @@ import Counter from '../Counter/Counter';
 import About from '../About/About';
 import UserList from '../UserList/UserList';
 import StoreLoader from '../StoreLoader/StoreLoader';
+import ComponentLoader from '../ComponentLoader/ComponentLoader';
 
 class ContentArea extends Component {
 	constructor(props, context) {
@@ -18,7 +19,8 @@ class ContentArea extends Component {
 				"/about": About,
 				"/counter": Counter,
 				"/users/:userId": UserList,
-				"/store/:storeName": StoreLoader
+				"/store/:storeName": StoreLoader,
+				"/component/:componentName": ComponentLoader
 			}
 		};
 		console.log("%c ContentArea Component -> Init ", 'background: red; color: white');

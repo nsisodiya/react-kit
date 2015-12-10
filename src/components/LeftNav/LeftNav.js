@@ -13,10 +13,9 @@ class LeftNav extends Component {
 		console.log("%c LeftNav Component -> Render ", 'background: black; color: pink');
 		return (
 				<div styleName='container'>
-					<Link href="/counter">CounterComponent</Link>
+					<Link href="/component/Counter">Counter</Link>
 					<Link href="/store/CounterStore">Counter Store</Link>
 					<Link href="/users">Users</Link>
-					<Link href="/module">Module Loader</Link>
 					<Link href="/about">About</Link>
 				</div>
 		);
