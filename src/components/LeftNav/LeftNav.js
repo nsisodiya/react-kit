@@ -32,9 +32,9 @@ class LeftNav extends Component {
 				text: "About"
 			}
 		];
-		this.subId = routeEventBus.subscribe("ROUTE_CHANGE_REQUESTED", (routeObj) => {
+		this.subId = routeEventBus.subscribe("ROUTE_CHANGE_DONE", (routeObj) => {
 			this.setState({
-				selectedLink: routeObj.path
+				selectedLink: routeObj.url
 			});
 		});
 	}
@@ -51,7 +51,8 @@ class LeftNav extends Component {
 				<div styleName='container'>
 					{this.config.map(function (v, i) {
 						return (
-								<Link styleName={util.iff(self.state.selectedLink === v.url, 'selected')} href={v.url}>{v.text}</Link>);
+								<Link key={i} styleName={util.iff(self.state.selectedLink === v.url, 'selected')}
+										href={v.url}>{v.text}</Link>);
 					})}
 				</div>
 		);

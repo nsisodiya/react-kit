@@ -11,3 +11,7 @@
 	background: black;
 	color: yellow;
 }
+
+.container > a {
+	padding: 5px;
+}

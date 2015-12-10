@@ -126,6 +126,12 @@ class RouteLoader extends Component {
 				if (window.location.pathname !== url) {
 					history.pushState({}, "WTF", url);
 				}
+
+				routeEventBus.publish("ROUTE_CHANGE_DONE", {
+					currentRoute: i,
+					url: url,
+					args: this
+				});
 			});
 		});
 	}
