@@ -64,7 +64,7 @@ Basic Components
 
 
 Other Features (If Possible)
-
+- [ ] Debug in Webstrom
 - [ ] Theming
 - [ ] Internationalisation
 - [ ] Performance Stats - time executions on various components loading/unloading etc
