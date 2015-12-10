@@ -99,7 +99,10 @@ class RouteLoader extends Component {
 
 		this.subId1 = routeEventBus.subscribe("ROUTE_CHANGE_REQUESTED_POPSTATE", function (routeObj) {
 			console.log("Path Requested", window.location.pathname);
-			simplePathParser.run(window.location.pathname);
+			routeEventBus.publish("ROUTE_CHANGE_REQUESTED", {
+				path: window.location.pathname
+			});
+			//simplePathParser.run(window.location.pathname);
 		});
 
 

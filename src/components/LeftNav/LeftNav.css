@@ -6,3 +6,8 @@
 	padding: 10px;
 	width: 200px;
 }
+
+.selected {
+	background: black;
+	color: yellow;
+}
