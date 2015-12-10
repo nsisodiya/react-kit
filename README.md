@@ -11,10 +11,13 @@ git clone git@github.com:nsisodiya/react-kit.git
 cd react-kit
 npm install
 grunt start-dev-server
+```
+
+Now Open
+
 [http://localhost:8000/component/Counter](http://localhost:8000/component/Counter)
 or
 [http://localhost:8000](http://localhost:8000)
-```
 
 # Task
 
@@ -65,3 +68,75 @@ Other Features (If Possible)
 - [ ] Inline Edit Forms etc
 - [ ] Isomorphic
 - [ ] Show build Error Directly on Red Block
+
+
+# Directory Structure
+
+```
+ ├── Gruntfile.js
+ ├── LICENSE
+ ├── README.md
+ ├── index.html
+ ├── package.json
+ ├── server.js
+ ├── start.sh
+ ├── webpack.config.js
+ ├─┬ dist/
+ │ ├── app.css
+ │ └── bundle.js
+ ├─┬ scripts/
+ │ ├── createComponent.sh
+ │ └── createStore.sh
+ └─┬ src/
+   ├── entry.js
+   ├─┬ common/
+   │ ├── Actions.js
+   │ ├── GenerateSingletonStore.js
+   │ ├── dispatcher.js
+   │ ├── simpleReactRouter.js
+   │ └── util.js
+   ├─┬ components/
+   │ ├─┬ About/
+   │ │ ├── About.css
+   │ │ └── About.js
+   │ ├─┬ ComponentLoader/
+   │ │ ├── ComponentLoader.css
+   │ │ └── ComponentLoader.js
+   │ ├─┬ ContentArea/
+   │ │ ├── ContentArea.css
+   │ │ └── ContentArea.js
+   │ ├─┬ Counter/
+   │ │ ├── Counter.css
+   │ │ └── Counter.js
+   │ ├─┬ Header/
+   │ │ ├── Header.css
+   │ │ └── Header.js
+   │ ├─┬ InputText/
+   │ │ ├── InputText.css
+   │ │ └── InputText.js
+   │ ├─┬ LeftNav/
+   │ │ ├── LeftNav.css
+   │ │ └── LeftNav.js
+   │ ├─┬ MainApp/
+   │ │ ├── MainApp.css
+   │ │ └── MainApp.js
+   │ ├─┬ StoreActionsViewer/
+   │ │ ├── StoreActionsViewer.css
+   │ │ └── StoreActionsViewer.js
+   │ ├─┬ StoreLoader/
+   │ │ ├── StoreLoader.css
+   │ │ └── StoreLoader.js
+   │ ├─┬ UserInfo/
+   │ │ ├── UserInfo.css
+   │ │ └── UserInfo.js
+   │ └─┬ UserList/
+   │   ├── UserList.css
+   │   └── UserList.js
+   ├─┬ css/
+   │ ├── loadcss.js
+   │ ├── style.css
+   │ ├── images/
+   │ └── svg-icons/
+   └─┬ stores/
+     └── CounterStore.js
+```

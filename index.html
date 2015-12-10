@@ -9,31 +9,8 @@
 <div style="height: 100%;margin: 0" id="root"></div>
 <script src="/bundle.js"></script>
 <script>
-
-	var moduleName = window.location.search.split("?m=")[1];
-	var apiName = window.location.search.split("?api=")[1];
-	var storeName = window.location.search.split("?store=")[1];
 	var node = document.getElementById('root');
-
-	if (moduleName !== undefined) {
-		var moduleReactComponent = window.reactBridge.components[moduleName];
-//		if (typeof moduleReactComponent !== "function") {
-//			alert("Error,Module not found ," + moduleName);
-//		}
-		ReactDOM.render(React.createElement(moduleReactComponent, null), node);
-
-	} else if (storeName !== undefined) {
-		ReactDOM.render(React.createElement(window.reactBridge.components.StoreLoader, {
-			storeName: storeName
-		}), node);
-	} else {
-
-		ReactDOM.render(React.createElement(window.reactBridge.components.MainApp, null), node);
-//		alert("Unable to know what to do - Possible syntax \n" +
-//				"http://localhost:8000/?store=CounterStore\n" +
-//				"http://localhost:8000/?m=Counter\n"
-//		)
-	}
+	ReactDOM.render(React.createElement(window.reactBridge.components.MainApp, null), node);
 </script>
 </body>
 </html>

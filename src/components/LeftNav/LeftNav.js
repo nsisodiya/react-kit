@@ -15,6 +15,8 @@ class LeftNav extends Component {
 				<div styleName='container'>
 					<Link href="/component/Counter">Counter</Link>
 					<Link href="/store/CounterStore">Counter Store</Link>
+					<Link href="/component/Header">Header</Link>
+					<Link href="/component/LeftNav">LeftNav</Link>
 					<Link href="/users">Users</Link>
 					<Link href="/about">About</Link>
 				</div>

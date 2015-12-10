@@ -26,6 +26,9 @@ import './css/loadcss';
 	"MainApp",
 	"Counter",
 	"About",
+	"UserList",
+	"Header",
+	"ContentArea",
 	"LeftNav",
 	"Header",
 	"StoreLoader"
