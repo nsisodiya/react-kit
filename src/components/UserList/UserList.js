@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import styles from './UserList.css';
 import CSSModules from 'react-css-modules';
-import Link from '../Link/Link';
+import {Link} from '../../common/simpleReactRouter';
 import util from '../../common/util';
 
 let myusers = [

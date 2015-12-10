@@ -1,14 +1,12 @@
 import React, {Component} from 'react';
 import styles from './LeftNav.css';
 import CSSModules from 'react-css-modules';
-import Link from '../Link/Link';
-
+import {Link} from '../../common/simpleReactRouter';
 
 class LeftNav extends Component {
 	constructor(props, context) {
 		super(props, context);
 	}
-
 
 	render() {
 		return (

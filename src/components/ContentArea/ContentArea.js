@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import styles from './ContentArea.css';
 import CSSModules from 'react-css-modules';
 
-import RouteLoader from '../RouteLoader/RouteLoader';
+import {RouteLoader} from '../../common/simpleReactRouter';
+
 import Counter from '../Counter/Counter';
 import About from '../About/About';
 import UserList from '../UserList/UserList';
