@@ -22,11 +22,13 @@ or
 - [x] Hot Reload of JS
 - [x] Live-Reload from dist folder !
 - [x] react-css-modules
-- [x] Component Creator, per component Loading -
-- [x] Store Creator
-- [x] Store Viewer
+- [x] Component Creator
 - [x] Component Viewer
 - [x] normalize.css and box-sizing.css
+- [x] Inbuilt Flux Implementation
+- [x] Sample CounterStore
+- [x] Store Creator
+- [x] Store Viewer
 - [ ] Hot Reload of CSS module
 - [ ] autoprefixing
 - [ ] Test cases adding
@@ -54,9 +56,6 @@ Basic Components
 - [ ] Popup
 - [ ] DataTables and Graphs
 
-Basic Store
-- [x] CounterStore
-- [x] Simple Flux Implementation
 
 Other Features (If Possible)
 
