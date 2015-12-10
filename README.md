@@ -41,7 +41,7 @@ or
 - [ ] Elemental UI - http://elemental-ui.com/css
 - [ ] Minification of JS/CSS
 - [ ] grunt deploy to create distribution folder
-- [ ] Extract Routing Code outside this repo
+- [ ] Extract Routing Code outside this repo (WIP - 50%)
 
 Basic Components
 
