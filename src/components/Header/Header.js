@@ -12,7 +12,7 @@ class Header extends Component {
 		console.log("%c Header Component -> render ", 'background: black; color: pink');
 		return (
 				<div styleName='container'>
-					Welcome to React Kit
+					Welcome to React Kit !
 				</div>
 		);
 	}

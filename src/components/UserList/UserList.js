@@ -59,6 +59,7 @@ class UserList extends Component {
 
 	render() {
 		console.log("%c UserList Component -> Render ", 'background: black; color: pink');
+		var self = this;
 		return (
 				<div styleName='container'>
 					<ul>{
@@ -68,7 +69,9 @@ class UserList extends Component {
 					}</ul>
 					{
 							util.iff(this.state.userId !== undefined, <div className="userInfoBox">
-								<UserInfo userId={this.state.userId}/>
+								<UserInfo user={myusers.filter(function(v) {
+								  return v.twitter === self.state.userId;
+								})[0]}/>
 							</div>)
 					}
 
