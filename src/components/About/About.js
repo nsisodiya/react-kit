@@ -8,9 +8,11 @@ class About extends Component {
 		this.state = {
 			name: 'About'
 		};
+		console.log("%c About Component -> Init ", 'background: red; color: white');
 	}
 
 	render() {
+		console.log("%c About Component -> Render ", 'background: black; color: pink');
 		return (
 				<div styleName='container'>
 					<p>

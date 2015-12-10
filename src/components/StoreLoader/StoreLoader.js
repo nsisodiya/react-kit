@@ -29,9 +29,11 @@ class StoreLoader extends Component {
 				jsonData: this.store.getState()
 			});
 		});
+		console.log("%c StoreLoader Component -> Init ", 'background: red; color: white');
 	}
 
 	render() {
+		console.log("%c StoreLoader Component -> Render ", 'background: black; color: pink');
 		return (
 				<div styleName='container'>
 					<h1>{this.state.storeName}</h1>

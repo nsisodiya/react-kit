@@ -48,7 +48,7 @@ class UserList extends Component {
 		this.state = {
 			userId: this.props.userId
 		};
-		console.log("UserList Component Init");
+		console.log("%c UserList Component -> Init ", 'background: red; color: white');
 	}
 
 	componentWillReceiveProps (nextProps){
@@ -58,7 +58,7 @@ class UserList extends Component {
 	}
 
 	render() {
-		console.log("UserList Component -> Render");
+		console.log("%c UserList Component -> Render ", 'background: black; color: pink');
 		return (
 				<div styleName='container'>
 					<ul>{

@@ -15,5 +15,9 @@ export default {
 			a.push(cb(obj[key], key));
 		});
 		return a;
+	},
+	color(colorStr){
+		var c = colorStr.split("-");
+		return `background: ${c[0]}; color: ${c[1]}`;
 	}
 };

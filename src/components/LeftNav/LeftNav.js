@@ -6,9 +6,11 @@ import {Link} from '../../common/simpleReactRouter';
 class LeftNav extends Component {
 	constructor(props, context) {
 		super(props, context);
+		console.log("%c LeftNav Component -> Init ", 'background: red; color: white');
 	}
 
 	render() {
+		console.log("%c LeftNav Component -> Render ", 'background: black; color: pink');
 		return (
 				<div styleName='container'>
 					<Link href="/counter">CounterComponent</Link>

@@ -88,7 +88,7 @@ var simplePathParser = new PathParser();
 class RouteLoader extends Component {
 	constructor(props, context) {
 		super(props, context);
-		console.log("RouterLoader -> Init");
+		console.log("%c RouteLoader Component -> Init ", 'background: red; color: white');
 		this.state = {
 			currentRoute: null
 		};
@@ -133,7 +133,7 @@ class RouteLoader extends Component {
 	}
 
 	render() {
-		console.log("RouterLoader -> Render");
+		console.log("%c RouteLoader Component -> Render ", 'background: black; color: pink');
 		if (this.state.currentRoute === null) {
 			return (<div></div>);
 		}

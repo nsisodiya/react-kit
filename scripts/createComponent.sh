@@ -33,9 +33,11 @@ class $ComponentName extends Component {
 		this.state = {
 			name: '$ComponentName'
 		};
+		console.log("%c $ComponentName Component -> Init ", 'background: red; color: white');
 	}
 
 	render() {
+	  console.log("%c $ComponentName Component -> Render ", 'background: black; color: pink');
 		return (
 				<div styleName='container'>
 					This is {this.state.name} Component

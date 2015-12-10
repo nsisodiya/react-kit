@@ -21,9 +21,11 @@ class ContentArea extends Component {
 				"/store/:storeName": StoreLoader
 			}
 		};
+		console.log("%c ContentArea Component -> Init ", 'background: red; color: white');
 	}
 
 	render() {
+		console.log("%c ContentArea Component -> Render ", 'background: black; color: pink');
 		return (
 				<div styleName='container'>
 					<RouteLoader config={this.config}></RouteLoader>

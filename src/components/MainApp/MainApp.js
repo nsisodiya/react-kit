@@ -12,9 +12,11 @@ class MainApp extends Component {
 		this.state = {
 			name: 'MainApp'
 		};
+		console.log("%c MainApp Component -> Init ", 'background: red; color: white');
 	}
 
 	render() {
+		console.log("%c MainApp Component -> Render ", 'background: black; color: pink');
 		return (
 				<div styleName='container'>
 					<Header/>

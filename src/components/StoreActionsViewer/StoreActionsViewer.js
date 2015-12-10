@@ -19,7 +19,8 @@ class StoreActionsViewer extends Component {
 		super(props, context);
 		this.state = {
 			actionList: this.props.actionList
-		}
+		};
+		console.log("%c StoreActionViewer Component -> Init ", 'background: red; color: white');
 	}
 
 	handleClick(action) {
@@ -31,6 +32,7 @@ class StoreActionsViewer extends Component {
 	}
 
 	render() {
+		console.log("%c StoreActionViewer Component -> Render ", 'background: black; color: pink');
 		return (
 				<div styleName='container'>
 					<h1>ActionList</h1>

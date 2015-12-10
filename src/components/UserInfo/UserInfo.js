@@ -8,6 +8,7 @@ class UserInfo extends Component {
 		this.state = {
 			userId: this.props.userId
 		};
+		console.log("%c UserInfo Component -> Init ", 'background: red; color: white');
 	}
 
 	componentWillReceiveProps (nextProps){
@@ -17,6 +18,7 @@ class UserInfo extends Component {
 	}
 
 	render() {
+		console.log("%c UserInfo Component -> Render ", 'background: black; color: pink');
 		return (<div>User {this.state.userId} Selected </div>);
 	}
 }
