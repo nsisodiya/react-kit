@@ -19,6 +19,9 @@ Now Open
 or
 [http://localhost:8000](http://localhost:8000)
 
+# Video
+[![Youtube Video YRL - https://www.youtube.com/watch?v=g4WnyBfiejg](http://img.youtube.com/vi/g4WnyBfiejg/0.jpg)](http://www.youtube.com/watch?v=g4WnyBfiejg)
+
 # Task
 
 - [x] Bable 6 and React 14, Webpack latest
