@@ -47,6 +47,7 @@ addEvent(window, 'popstate', function (event) {
 		console.log("Back/Forward Button Clicked, but Page is currently holded");
 		event.preventDefault();
 		//history.replaceState(null, document.title, "/about");
+		history.go(1); //This will make two alertBOX but working !!
 		return false;
 	}
 });

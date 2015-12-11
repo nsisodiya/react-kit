@@ -41,6 +41,7 @@ class About extends Component {
 								<b>Page is not HOLDED</b>
 						)
 					}
+					<input placeholder="Type Something" type="text"/>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum pretium nisi, vitae tincidunt
 						ligula commodo eu. Donec egestas interdum nibh, vel posuere nisi sagittis id. Morbi ut feugiat odio. Duis
