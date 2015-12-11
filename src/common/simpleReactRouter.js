@@ -38,9 +38,17 @@ var addEvent = (function () {
 
 
 addEvent(window, 'popstate', function (event) {
-	routeEventBus.publish("ROUTE_CHANGE_REQUESTED_POPSTATE", {
-		event: event
-	});
+	if (PageHolder.currentPageHolded === false || confirm(PageHolder.currentPageHolded)) {
+		PageHolder.unHold();
+		routeEventBus.publish("ROUTE_CHANGE_REQUESTED_POPSTATE", {
+			event: event
+		});
+	} else {
+		console.log("Back/Forward Button Clicked, but Page is currently holded");
+		event.preventDefault();
+		//history.replaceState(null, document.title, "/about");
+		return false;
+	}
 });
 
 setTimeout(function () {
@@ -63,10 +71,17 @@ class Link extends Component {
 		//Stop Event
 		synthEvt.preventDefault();
 		synthEvt.stopPropagation();
-		//Send RouteChange Signal to everywhere
-		routeEventBus.publish("ROUTE_CHANGE_REQUESTED", {
-			path: synthEvt.target.getAttribute("href")
-		});
+
+		if (PageHolder.currentPageHolded === false || confirm(PageHolder.currentPageHolded)) {
+			PageHolder.unHold();
+			//Send RouteChange Signal to everywhere
+			routeEventBus.publish("ROUTE_CHANGE_REQUESTED", {
+				path: synthEvt.target.getAttribute("href")
+			});
+		} else {
+			//Do nothing, If False !!
+			console.log("Link Clicked, but Page is currently holded");
+		}
 	}
 
 	render() {
@@ -159,3 +174,19 @@ RouteLoader.defaultProps = {};
 RouteLoader.propTypes = {};
 
 module.exports.RouteLoader = RouteLoader;
+
+//========================= Page Holder API ===========================//
+
+var PageHolder = {
+	currentPageHolded: false,
+	hold(message){
+		this.currentPageHolded = message;
+	},
+	unHold(){
+		this.currentPageHolded = false;
+	}
+};
+
+module.exports.PageHolder = PageHolder;
+
+//============================= Modify pushStateFunction ====================//

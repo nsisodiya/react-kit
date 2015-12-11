@@ -1,20 +1,46 @@
 import React, {Component} from 'react';
 import styles from './About.css';
 import CSSModules from 'react-css-modules';
+import util from '../../common/util';
+
+import {PageHolder} from '../../common/simpleReactRouter';
 
 class About extends Component {
 	constructor(props, context) {
 		super(props, context);
 		this.state = {
-			name: 'About'
+			name: 'About',
+			pageHolded: true
 		};
 		console.log("%c About Component -> Init ", 'background: red; color: white');
+
+		PageHolder.hold('You have some Unsaved Changes on this Page, Are you sure ?');
+
+		var self = this;
+		this.subID = window.setTimeout(() => {
+			PageHolder.unHold();
+			self.setState({
+				pageHolded: false
+			});
+		}, 6000);
+
+	}
+
+	componentWillUnmount() {
+		window.clearTimeout(this.subID);
+		PageHolder.unHold();
 	}
 
 	render() {
 		console.log("%c About Component -> Render ", 'background: black; color: pink');
 		return (
 				<div styleName='container'>
+					{
+						util.iff(this.state.pageHolded,
+								<b>This Page load with HOLDED state for 6 second</b>,
+								<b>Page is not HOLDED</b>
+						)
+					}
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum pretium nisi, vitae tincidunt
 						ligula commodo eu. Donec egestas interdum nibh, vel posuere nisi sagittis id. Morbi ut feugiat odio. Duis

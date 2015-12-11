@@ -35,6 +35,9 @@ or
 - [x] Sample CounterStore
 - [x] Store Creator
 - [x] Store Viewer
+- [x] Routing - Component Replacement
+- [x] Routing - Confirm Navigation Dialog
+- [x] Routing - Tabbing - Show/Hide
 - [ ] Hot Reload of CSS module
 - [ ] autoprefixing
 - [ ] Test cases adding
@@ -55,10 +58,6 @@ Basic Components
 
 - [x] Counter Example
 - [x] Left Navigator
-- [x] Routing - Component Replacement
-- [ ] Tabs
-- [ ] Routing - Confirm Navigation
-- [x] Routing - Tabbing - Show/Hide
 - [ ] Popup
 - [ ] DataTables and Graphs
 
