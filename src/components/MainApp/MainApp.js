@@ -6,6 +6,8 @@ import Header from '../Header/Header';
 import LeftNav from '../LeftNav/LeftNav';
 import ContentArea from '../ContentArea/ContentArea';
 
+import GitHubForkRibbon from 'react-github-fork-ribbon';
+
 class MainApp extends Component {
 	constructor(props, context) {
 		super(props, context);
@@ -19,6 +21,11 @@ class MainApp extends Component {
 		console.log("%c MainApp Component -> Render ", 'background: black; color: pink');
 		return (
 				<div styleName='container'>
+					<GitHubForkRibbon href="https://github.com/nsisodiya/react-kit"
+							target="_blank"
+							position="right">
+						Fork me on GitHub
+					</GitHubForkRibbon>
 					<Header/>
 					<div styleName='mainArea'>
 						<LeftNav />

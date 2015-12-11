@@ -33,6 +33,7 @@
     "pathparser": "0.0.1",
     "react": "0.14.3",
     "react-dom": "0.14.3",
+	  "react-github-fork-ribbon": "0.4.2",
     "react-json-viewer": "1.0.7",
     "react-tabs": "0.5.1"
   },
