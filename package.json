@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
 	  "start": "NODE_ENV=production node herokuServer.js",
-	  "postinstall": "webpack --config ./webpack.config.js --progress --colors",
+	  "postinstall": "node node_modules/webpack/bin/webpack.js --config ./webpack.config.js --progress --colors",
     "lint": "eslint src"
   },
   "repository": {
