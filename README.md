@@ -1,7 +1,5 @@
 # react-kit
-React Kit for React workshop !
-
-![Under Construction](http://s29.postimg.org/71vwj0gef/under_Construction.gif)
+React Starter Kit for Quick Start on React !
 
 # Install and work
 ```
@@ -24,6 +22,8 @@ or
 
 # Task
 
+Features
+
 - [x] Bable 6 and React 14, Webpack latest
 - [x] Hot Reload of JS
 - [x] Live-Reload from dist folder !
@@ -38,6 +38,7 @@ or
 - [x] Routing - Component Replacement
 - [x] Routing - Confirm Navigation Dialog
 - [x] Routing - Tabbing - Show/Hide
+- [ ] Extract Routing Code outside this repo (WIP)
 - [ ] Hot Reload of CSS module
 - [ ] autoprefixing
 - [ ] Test cases adding
@@ -47,12 +48,10 @@ or
 - [ ] Animation
 - [ ] Image loader
 - [ ] svg-icons to font generator !
-- [ ] External CSS Loader (Done partially)
-- [ ] External CSS - Font Awesome
-- [ ] Elemental UI - http://elemental-ui.com/css
+- [ ] External CSS Loader (WIP)
+- [ ] External CSS - Font Awesome or Elemental UI - http://elemental-ui.com/css
 - [ ] Minification of JS/CSS
 - [ ] grunt deploy to create distribution folder
-- [ ] Extract Routing Code outside this repo (WIP - 50%)
 
 Basic Components
 
@@ -69,7 +68,7 @@ Other Features (If Possible)
 - [ ] Performance Stats - time executions on various components loading/unloading etc
 - [ ] Inline Edit Forms etc
 - [ ] Isomorphic
-- [ ] Show build Error Directly on Red Block
+- [ ] Show build Error Directly on UI using Red Block
 
 
 # Directory Structure
