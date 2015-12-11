@@ -1,6 +1,10 @@
 # react-kit
 React Starter Kit for Quick Start on React !
 
+# Demo
+
+[https://reactstarterkit.herokuapp.com/](https://reactstarterkit.herokuapp.com/)
+
 # Install and work
 ```
 npm install webpack -g
@@ -38,6 +42,7 @@ Features
 - [x] Routing - Component Replacement
 - [x] Routing - Confirm Navigation Dialog
 - [x] Routing - Tabbing - Show/Hide
+- [x] Auto Deploy on Heroku
 - [ ] Extract Routing Code outside this repo (WIP)
 - [ ] Hot Reload of CSS module
 - [ ] autoprefixing
