@@ -4,6 +4,10 @@ import CSSModules from 'react-css-modules';
 import {Link} from '../../common/simpleReactRouter';
 import util from '../../common/util';
 
+
+import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
+
+
 let myusers = [
 	{
 		name: "Elie Rotenberg",
@@ -46,14 +50,24 @@ class UserList extends Component {
 	constructor(props, context) {
 		super(props, context);
 		this.state = {
-			userId: this.props.userId
+			selectedIndex: this.getIndexFromUserId(this.props.userId)
 		};
 		console.log("%c UserList Component -> Init ", 'background: red; color: white');
 	}
 
-	componentWillReceiveProps (nextProps){
+	getIndexFromUserId(userId) {
+		var index;
+		myusers.map(function (v, i) {
+			if (v.twitter === userId) {
+				index = i;
+			}
+		});
+		return index;
+	}
+
+	componentWillReceiveProps(nextProps) {
 		this.setState({
-			userId: nextProps.userId
+			selectedIndex: this.getIndexFromUserId(nextProps.userId)
 		});
 	}
 
@@ -62,19 +76,20 @@ class UserList extends Component {
 		var self = this;
 		return (
 				<div styleName='container'>
-					<ul>{
-						myusers.map(user => {
-							return <li key={user.twitter}><Link href={"/users/" + user.twitter}>{user.name}</Link></li>
-						})
-					}</ul>
-					{
-							util.iff(this.state.userId !== undefined, <div className="userInfoBox">
-								<UserInfo user={myusers.filter(function(v) {
-								  return v.twitter === self.state.userId;
-								})[0]}/>
-							</div>)
-					}
-
+					<Tabs forceRenderTabPanel selectedIndex={this.state.selectedIndex}>
+						<TabList>
+							{
+								myusers.map(user => {
+									return <Tab key={user.twitter}><Link href={"/users/" + user.twitter}>{user.name}</Link></Tab>
+								})
+							}
+						</TabList>
+						{
+							myusers.map(user => {
+								return <TabPanel key={user.twitter}><UserInfo user={user}/></TabPanel>
+							})
+						}
+					</Tabs>
 				</div>);
 	}
 }

@@ -23,6 +23,13 @@ class ComponentLoader extends Component {
 
 	render() {
 		console.log("%c ComponentLoader Component -> Render ", 'background: black; color: pink');
+		if(this.state.component === undefined){
+			return (
+					<div>Unable to find Component : {this.props.componentName}
+					<p>Hint : Add ComponentName in entry.js</p>
+					</div>
+			);
+		}
 		return (
 				<this.state.component/>
 		);

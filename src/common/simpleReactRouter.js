@@ -111,25 +111,25 @@ class RouteLoader extends Component {
 			console.log("adding", i);
 			simplePathParser.add(i, function () {
 				//Load Component which mached with {i}
-				var url = "/" + this.url;
+				this.url = "/" + this.url;
 
 				// Change State if new Component is requested
 				//if (self.state.currentRoute !== i) {
 				self.setState({
 					currentRoute: i,
-					url: url,
+					url: this.url,
 					args: this
 				});
 				//}
 
 				//Now Set Path
-				if (window.location.pathname !== url) {
-					history.pushState({}, "WTF", url);
+				if (window.location.pathname !== this.url) {
+					history.pushState({}, "WTF", this.url);
 				}
 
 				routeEventBus.publish("ROUTE_CHANGE_DONE", {
 					currentRoute: i,
-					url: url,
+					url: this.url,
 					args: this
 				});
 			});

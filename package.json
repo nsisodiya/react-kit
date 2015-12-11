@@ -29,7 +29,8 @@
     "pathparser": "0.0.1",
     "react": "0.14.3",
     "react-dom": "0.14.3",
-    "react-json-viewer": "1.0.7"
+    "react-json-viewer": "1.0.7",
+    "react-tabs": "0.5.1"
   },
   "devDependencies": {
     "babel-core": "6.2.1",
