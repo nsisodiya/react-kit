@@ -4,10 +4,13 @@
   "description": "React Kit",
   "main": "index.js",
   "scripts": {
-	  "start": "NODE_ENV=production node herokuServer.js",
+	  "start": "node herokuServer.js",
 	  "postinstall": "node node_modules/webpack/bin/webpack.js --config ./webpack.config.js --progress --colors",
     "lint": "eslint src"
   },
+	"engines": {
+		"node": "5.1.1"
+	},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nsisodiya/react-kit.git"
