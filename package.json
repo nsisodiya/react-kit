@@ -4,7 +4,8 @@
   "description": "React Kit",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+	  "start": "NODE_ENV=production node herokuServer.js",
+	  "postinstall": "webpack --config ./webpack.config.js --progress --colors",
     "lint": "eslint src"
   },
   "repository": {
