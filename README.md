@@ -58,7 +58,7 @@ Basic Components
 - [x] Routing - Component Replacement
 - [ ] Tabs
 - [ ] Routing - Confirm Navigation
-- [ ] Routing - Tabbing - Show/Hide
+- [x] Routing - Tabbing - Show/Hide
 - [ ] Popup
 - [ ] DataTables and Graphs
 
